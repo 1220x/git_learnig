@@ -22,3 +22,19 @@ git reset --hard : 将暂存区 \ 工作目录下的内容都清空掉. 使得�
 
 `git mv <原文件名> <新的文件名>`
 
+## git log命令
+- `git log --all`  查看所有分支的历史
+- `git log --all  --graph` 查看图形化的log地址
+- `git log --oneline` 查看单行的简洁历史
+- `git log --oneline -n4` 查看最近的四条简洁历史
+- `git log --oneline --al -n4 --graph` 查看所有分支,最近4条单行的图形化历史
+- `git hepl --web log` 跳转到git log的帮助文档页面
+
+
+## git分支
+- `git branch -v` 查看本地分支信息
+- `git checkout -b <分支名> <已有分支的某个commit号,依据此时的分支来创建新的分支>`
+
+## tips
+命令中,什么时候用 `--` 什么时候用 `-` 呢?
+    详情参数使用`--`, 简化参数(如单字母)使用`-`
